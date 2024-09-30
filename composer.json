@@ -1,0 +1,13 @@
+{
+    "name": "easychen/serverchan-sdk",
+    "description": "PHP SDK for ServerChan",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ServerChan\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0"
+    }
+}
