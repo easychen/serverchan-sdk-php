@@ -1,5 +1,7 @@
 # serverchan-sdk-php
 
+Server酱官方PHP SDK，兼容SCT和SC3。
+
 ## Install composer package
 ```bash
 composer require easychen/serverchan-sdk
