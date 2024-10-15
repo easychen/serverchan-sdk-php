@@ -20,10 +20,12 @@ function scSend($sendkey, $title, $desp = '', $options = null)
 {
     $is_sctp = strpos($sendkey, 'sctp') === 0;
     if ($is_sctp) {
-        $url = "https://{$sendkey}.push.ft07.com/send";
+        preg_match('/^sctp(\d+)t/', $sendkey, $matches);
+        $url = "https://{$matches[1]}.push.ft07.com/send/{$sendkey}.send";
     } else {
         $url = "https://sctapi.ftqq.com/{$sendkey}.send";
     }
+
 
     $params = array_merge([
         'title' => $title,
